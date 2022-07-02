@@ -35,9 +35,5 @@ int main()
 	int outty{};
 	int newammo = 5000;
 	HANDLE Process = GetProcess();
-	ReadM(Process, LPCVOID(0x00DDAB50), &outty);
-	std::cout << outty;
-	WriteM(Process, LPVOID(0x00DDAB50), &newammo);
-	ReadM(Process, LPCVOID(0x00DDAB50), &outty);
-	std::cout << outty;
+	
 }
